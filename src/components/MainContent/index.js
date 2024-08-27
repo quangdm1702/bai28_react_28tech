@@ -1,3 +1,4 @@
+import { BsArrowThroughHeart, BsArrowUpCircle } from "react-icons/bs";
 function MainContent() {
   let name = 'Doan Minh Quang';
   const css = {
@@ -14,7 +15,10 @@ function MainContent() {
         <div className="test" style={css}>
           Xin chao {name}
         </div>
+        <BsArrowThroughHeart style={{ fontSize: '40px' }} />
+        <BsArrowUpCircle />
       </div>
+
 
     </>
   );
