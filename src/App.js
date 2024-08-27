@@ -1,20 +1,21 @@
 import './App.css';
+import Content from './components/Content';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import NavMenu from './components/NavMenu';
 
 function App() {
-  let name = 'Doan Minh Quang';
-  const css = {
-    color: 'white',
-    backgroundColor: 'black'
-  };
   return (
     <>
-      <div className="test" style={css}>
-        Xin chao {name}
+      <Header />
+      <NavMenu />
+      <div className="main">
+        <Content />
+        <MainContent />
+        <Content />
       </div>
-
-      <div className="test" style={css}>
-        Xin chao {name}
-      </div>
+      <Footer />
     </>
   );
 }
